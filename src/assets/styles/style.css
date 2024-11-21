@@ -2,10 +2,314 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.test {
-    color: red !important;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.container {
+    padding: 0 40px;
+}
+
+.header {
+    background-color: #dfdfdf;
+    padding: 10px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px 20px 30px;
+    background-color: #646464;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #e6e6e6;
+}
+
+.nav a:hover {
+    color: rgb(82, 16, 16); 
+    text-decoration: underline; 
+}
+
+.header-description {
+    margin: 5px 0 10px 0;
+}
+
+.header-description h4, .header-description p{
+    text-align: center;
+}
+
+.home {
+    width: 65%;
+}
+
+.home-title {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.home-description p {
+    margin-bottom: 10px;
+}
+
+.home-form {
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+}
+
+.home-form input[type="text"],
+.home-form input[type="tel"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; 
+}
+
+.home-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #646464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-form button:hover {
+    background-color: rgb(82, 16, 16);
+}
+
+.history {
+    display: flex;
+    padding: 40px;
+    gap: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.magician {
+    background-color: #dfdfdf;
+    padding: 40px;
+}
+
+.magician h2 {
+    text-align: center;
+}
+
+.magician-list {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.magician-list-item li {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.orders {
+    background-image: url(../img/fon.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders-all {
+    background-color: #cccccce5;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    display: flex;
+}
+
+.order-form {
+    max-width: 400px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.order-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #646464;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: rgb(82, 16, 16);
+}
+
+.awards h2 {
+    margin-top: 40px;
+    text-align: center
+}
+
+.awards-list {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.awards-items div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 5px;
+}
+
+.awards-items p{
+    margin-bottom: 20px;
+}
+
+.services-all {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.services-description ul {
+    margin: 10px 0;
+    list-style: circle;
+}
+
+.join-guild {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.join-guild h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.join-guild p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.join-form {
+    background-color: #ccc;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.join-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.join-form input, 
+.join-form select, 
+.join-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.join-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #646464;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-form button:hover {
+    background-color: rgb(82, 16, 16);
+}
+
+.guild-footer {
+    background-color: #646464;
+    padding: 20px;
+    text-align: center;
+}
+
+.guild-footer h2 {
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.guild-footer ul li {
+    margin-bottom: 10px;
+    color: #c0c0c0;
+}
+
+.guild-footer ul ul {
+    margin-top: 5px;
+}
+
+.guild-footer a {
+    color: #c0c0c0;
+}
+
+.guild-footer a:hover {
+    color: rgb(82, 16, 16);
+    text-decoration: underline;
 }
