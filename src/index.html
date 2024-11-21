@@ -5,14 +5,221 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <title>Гильдия Хвост фей</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-<div class="test" style="color: blue">
-    test
-</div>
+    <header class="header">
+        <div class="header-nav">
+            <img src="assets/img/logo.png" alt="Логотип сайта" width="40">
 
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <section class="home" id="home">
+                <div class="home-title">
+                    <h1>Добро пожаловать на наш сайт!</h1>
+                    <p>Здесь вы найдете все необходимое для знакомства с нашей гильдией.</p>
+                </div>
+                <div class="home-description">
+                    <p>Если желаете связаться с нами:</p>
+                    <form class="home-form" action="submit_form.php" method="post">
+                        <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </header>
+    <hr>
+    <main class="main">
+        <section class="history">
+            <div class="history-description">
+                <h2>Наша история</h3>
+                <p>Известно, что гильдия Хвост Феи была основана в X686 году. 
+                    Хвост Феи существует по крайней мере несколько десятилетий, но только сейчас возросла до нынешней известности и силы в последние несколько лет.</p>
+                <h3>Наша священная земля</h3>
+                <p>Остров Тенрю - священная земля, где похоронен первый мастер гильдии.</p>   
+            </div>
+            <div class="history-master">
+                <h3>Основатели:</h3>
+                <ol>
+                    <li>Мавис Вермилион</li>
+                    <li>Пречт</li>
+                    <li>Варрод Секвин</li>
+                    <li>Юрий Дреяр</li>
+                </ol>
+                <img src="assets/img/onemaster.png" alt="мастер основатель" width="300px">
+            </div>
+        </section>
+        <hr>
+        <section class="magician" id="about">
+            <h2>Наши маги!</h2>
+            <div class="magician-list">
+                <ul class="magician-list-item">
+                    <li>Нацу Драгнил</li>
+                    <li>Хэппи</li>
+                    <li>Люси Хартфилия</li>
+                    <li>Грей Фуллбастер</li>
+                </ul>
+                <ul class="magician-list-item">
+                    <li>Эрза Скарлет</li>
+                    <li>Мираджейн Штраусс</li>
+                    <li>Лексус Дреяр</li>
+                    <li>Гилдартс Клайв</li>
+                </ul>
+                <img src="assets/img/magi.jpg" alt="маги" width="200px">
+            </div>
+        </section>
+        <hr>
+        <section class="orders">
+            <div class="container">
+                <div class="orders-all">
+                    <div class="order-items">
+                        <h3>Хотите сделать заказ?</h3>
+                        <p>Здесь вы можете быстро оставить заявку для задания.</p>
+                    </div>
+                    <div class="order-form">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="number" name="sale" placeholder="Сумма заказа" required> 
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="awards">
+            <div class="container">
+                <h2>Наши награды</h2>
+                <div class="awards-list">
+                    <div class="awards-list-items">
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/natsu_award.jpg" alt="Награда Нацу Драгнила" width="60px">
+                                <h4>Маг года: Нацу Драгнил</h4>
+                            </div>
+                            <p>Нацу был удостоен звания "Маг года" за победу в турнире великих магов и спасение мира от Зерефа.</p>
+                        </div>
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/erza_award.jpg" alt="Награда Эльзы Скарлетт" width="60px">
+                                <h4>Самый сильный рыцарь: Эльза Скарлетт</h4>
+                            </div>
+                            <p>Эльза получила награду за свои боевые подвиги и непоколебимую защиту гильдии.</p>
+                        </div>
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/guild_award.jpg" alt="Награда гильдии Хвост Фей" width="60px">
+                                <h4>Лучшая гильдия</h4>
+                            </div>
+                            <p>"Хвост Фей" была признана лучшей гильдией за свою сплоченность и преданность своим членам.</p>
+                        </div>
+                    </div>
+                    <div class="awards-list-items">
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/gray_award.jpg" alt="Награда Грея Фуллбастера" width="60px">
+                                <h4>Лучший маг льда: Грей Фуллбастер</h4>
+                            </div>
+                            <p>Грей был награжден за создание уникальной ледяной магии и победу над драконом серебра.</p>
+                        </div>
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/lucy_award.jpg" alt="Награда Люси Хартфилии" width="60px">
+                                <h4>Мастер звёздных духов: Люси Хартфилия</h4>
+                            </div>
+                            <p>Люси получила награду за открытие нового созвездия и заключение контракта с королем звездных духов.</p>
+                        </div>
+                        <div class="awards-items">
+                            <div>
+                                <img src="assets/img/happy_award.jpg" alt="Награда Хэппи" width="60px">
+                                <h4>Самый верный товарищ: Хэппи</h4>
+                            </div>
+                            <p>Хэппи был награжден за преданность своим друзьям и множество спасений в самых сложных ситуациях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services-all">
+                    <div class="services-description">
+                        <h3>Услуги гильдии "Хвост Фей"</h3>
+                        <p>Гильдия "Хвост Фей" предоставляет широкий спектр услуг для магов и жителей мира Фиор. Вот некоторые из них:</p>
+                        <ul>
+                            <li>Выполнение магических заказов: от поиска пропавших вещей до спасения мира.</li>
+                            <li>Обучение магии: курсы для начинающих магов под руководством лучших мастеров.</li>
+                            <li>Аренда магических артефактов для приключений и исследований.</li>
+                            <li>Организация фестивалей и турниров магов.</li>
+                        </ul>
+                        <p>Каждое задание или услуга выполняются с максимальной отдачей и профессионализмом. Доверяйте своим задачам магам "Хвоста Фей"!</p>
+                    </div>
+                    <img src="assets/img/guild_services.jpg" alt="Услуги гильдии Хвост Фей" width="400px">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="join-guild">
+            <div class="container">
+                <h2>Присоединяйтесь к гильдии "Хвост Фей"</h2>
+                <p>Вы мечтаете стать частью нашей дружной команды магов? Заполните заявку, и мы рассмотрим вашу кандидатуру. Укажите свои навыки, магические способности и мотивацию.</p>
+            
+                <form action="" method="post" class="join-form">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required><br><br>
+            
+                    <label for="magic-type">Тип вашей магии:</label>
+                    <select id="magic-type" name="magic_type" required>
+                        <option value="" disabled selected>Выберите тип магии</option>
+                        <option value="fire">Магия огня</option>
+                        <option value="ice">Магия льда</option>
+                        <option value="celestial">Магия звёздных духов</option>
+                        <option value="lightning">Магия молнии</option>
+                        <option value="other">Другое</option>
+                    </select><br><br>
+            
+                    <label for="experience">Ваш опыт:</label>
+                    <textarea id="experience" name="experience" rows="4" placeholder="Расскажите о вашем опыте и приключениях" required></textarea><br><br>
+            
+                    <label for="motivation">Почему вы хотите вступить в гильдию?</label>
+                    <textarea id="motivation" name="motivation" rows="4" placeholder="Опишите вашу мотивацию" required></textarea><br><br>
+            
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="guild-footer" id="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <ul>
+                <li>Телефон: +7 (999) 123-45-67</li>
+                <li>Email: fairy.tail@guildmail.com</li>
+                <li>Социальные сети:
+                    <ul>
+                        <li><a href="https://facebook.com/fairytailguild" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com/fairytailguild" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/fairytailguild" target="_blank">Twitter</a></li>
+                    </ul>
+                </li>
+                <li>Адрес: Магнолия, здание гильдии "Хвост Фей".</li>
+            </ul>
+        </div>
+    </footer>
+    
 <script src="index.js"></script>
 </body>
 </html>
