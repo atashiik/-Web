@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container container-dop">
         <header class="header">
+            <img class="header-menu-768" src="assets/img/иконка_меню_ср.svg" id="toggle-button-1" alt="">
+            <img class="header-menu-425" src="assets/img/иконка_меню_мал.svg" id="toggle-button-2" alt="">
             <div class="logo">
                 IT WEBSITE
             </div>
@@ -23,7 +25,7 @@
             </nav>
             <div class="contact-info">
                 <div class="contact-info-items">
-                    <img src="assets/img/Icon Color.svg" alt="">
+                    <img src="assets/img/smartphone_outline_24.svg" alt="">
                     <a href="#"> +7 (111) 111 11 11 </a>
                     <a href="#"> +7 (111) 111 11 11 </a>
                 </div>
@@ -33,6 +35,37 @@
                 </div>
             </div>
         </header>
+    </div>
+    <div class="dropdown" id="hidden-block">
+        <div class="dropdown-container" id="hidden-block-content">
+            <div class="">
+                <img src="assets/img/крест.svg" id="close-button" alt="">
+            </div>
+            <div class="logo">
+                IT WEBSITE
+            </div>
+            <nav class="header-nav">
+                <a href="#">Services</a>
+                <a href="#">Media</a>
+                <a href="#">Cases</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contacts</a>
+            </nav>
+            <div class="contact-info-items">
+                <div>
+                    <img src="assets/img/smartphone_outline_24.svg" alt="">
+                    <a href="#"> +7 (111) 111 11 11 </a>
+                </div>
+                <div>
+                    <img src="assets/img/smartphone_outline_24.svg" alt="">
+                    <a href="#"> +7 (111) 111 11 11 </a>
+                </div>
+                <div>
+                    <img src="assets/img/mail_outline_24.svg" alt="">
+                    <a href="#"> itcompany@mail.com</a>
+                </div>
+            </div>
+        </div>
     </div>
     <main>
         <section class="intro">
@@ -61,6 +94,60 @@
                 </div>
             </div>
         </section>
+        <section class="technologies">
+            <div class="container">
+                <div class="technologies_content">
+                    <div class="technologies_column">
+                        <div class="technologies_column_content">
+                            <div>Full development cycle</div>
+                            <p>We use proven technologies</p>
+                        </div>
+                        <div class="technologies_column_text">
+                            <div>
+                                <div>Web</div>
+                                <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/<br>Nuxt / MySQL / Laravel / GO lang / django / Python</p>
+                            </div>
+                            <div>
+                                <div>Mobile</div>
+                                <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm /<br> Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technologies_column technologies_column_item">
+                        <ul>
+                            <li>
+                                <a href="">iOS  development</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">Android development</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">Web development</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">UI/UX design</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">Testing</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">Launch</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                            <li>
+                                <a href="">IT consulting</a> 
+                                <a href="#" class="technologies_column_element">></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -69,7 +156,7 @@
                 <div class="footer-content">
                     <div class="footer-content-items">
                         <div class="content-items-items">
-                            <img src="assets/img/smartphone_outline_24.svg" alt="">
+                            <img src="assets/img/smartphone_outline_24_1.svg" alt="">
                             <p>Contact nums</p>
                         </div>
                         <p>+7 (778) 395 90 26</p>
