@@ -1,0 +1,66 @@
+@media screen and (max-width: 426px) {
+    .container {
+        max-width: 393px;
+    }
+
+    .intro {
+        padding: 140px 0 536px 0
+    }
+
+    .intro-text {
+        margin-bottom: 536px;
+    }
+
+    .technologies_content {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .technologies_column_item {
+        padding: 0;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .header {
+        width: 409px;
+
+        .header-menu-768 {
+            display: none;
+        }
+    
+        .header-menu-425 {
+            display: block;
+        }
+    }
+
+    .dropdown {
+        .dropdown-container {
+            padding: 50px 125px 0 125px;
+        }
+
+        .logo {
+            font-size: 20px;
+            line-height: 18px;
+            margin: 17px 0 52px 0;
+        }
+
+        .header-nav {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        .contact-info-items{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 52px 0 59px 0;
+        }
+    }
+}
