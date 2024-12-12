@@ -1,4 +1,4 @@
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 767px) {
     .container {
         max-width: 393px;
     }
@@ -25,12 +25,10 @@
         gap: 32px;
     }
 
-    .contact-info {
-        display: none;
-    }
-
     .header {
-        width: 409px;
+        width: 100%;
+        justify-content: initial;
+        gap: 35%;
 
         .header-menu-768 {
             display: none;
@@ -38,6 +36,10 @@
     
         .header-menu-425 {
             display: block;
+        }
+
+        .contact-info {
+            display: none;
         }
     }
 

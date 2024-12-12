@@ -30,8 +30,9 @@ main {
 
 .header {
   background-color: #fff;
-  display: flex;
+  display: inline-flex;
   position: fixed;
+  margin: 0 auto;
   gap: 80px;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +40,6 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #2D66EE;
   padding: 24px 16px;
-  margin-top: 24px;
   z-index: 100000;
 }
 .header .header-menu-768, .header .header-menu-425 {
@@ -235,7 +235,7 @@ main {
   line-height: 16px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1039px) {
   .container {
     max-width: 702px;
     margin: 0 auto;
@@ -294,7 +294,8 @@ main {
     gap: 3px;
   }
   .header {
-    max-width: 768px;
+    left: 0;
+    right: 0;
     padding: 25px 32px;
     margin-top: 16px;
     gap: 158px;
@@ -345,7 +346,7 @@ main {
     display: none;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 393px;
   }
@@ -366,17 +367,19 @@ main {
     flex-wrap: wrap;
     gap: 32px;
   }
-  .contact-info {
-    display: none;
-  }
   .header {
-    width: 409px;
+    width: 100%;
+    justify-content: initial;
+    gap: 35%;
   }
   .header .header-menu-768 {
     display: none;
   }
   .header .header-menu-425 {
     display: block;
+  }
+  .header .contact-info {
+    display: none;
   }
   .dropdown .dropdown-container {
     padding: 50px 125px 0 125px;

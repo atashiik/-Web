@@ -1,7 +1,8 @@
 .header {
     background-color: #fff;
-    display: flex;
+    display: inline-flex;
     position: fixed;
+    margin: 0 auto;
     gap: 80px;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +10,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #2D66EE;
     padding: 24px 16px;
-    margin-top: 24px;
     z-index: 100000;
 
     .header-menu-768, .header-menu-425 {
