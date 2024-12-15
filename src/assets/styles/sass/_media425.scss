@@ -11,12 +11,13 @@
         margin-bottom: 536px;
     }
 
-    .technologies_content {
+    .technologies-content {
+        padding: 32px 0 52px 0;
         flex-wrap: wrap;
         gap: 32px;
     }
 
-    .technologies_column_item {
+    .technologies-column-item {
         padding: 0;
     }
 
@@ -63,6 +64,192 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 52px 0 59px 0;
+        }
+    }
+
+    .development{
+        &-content {
+            &-title {
+                padding: 31px 0 27px 0;
+            }
+
+            &-list {
+
+                margin-bottom: 32px;
+                li {
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-project {
+            &-text {
+                width: 393px;
+            }
+
+            &-some {
+                &-list {
+                    ul {
+                        flex-wrap: wrap;
+                    }
+                }
+                
+                &-teka {
+                    &-content {
+                        &-title {
+                            button {
+                                display: none;
+                            }
+                        }
+
+                        &-p {
+                            width: 393px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .block {
+        &-item {
+    
+            &-button {
+                display: none;
+            }
+    
+            &-button2 {
+                display: block;
+            }
+        }
+    }
+
+    .discuss {
+        &-content {
+            flex-direction: column;
+            gap: 128px;
+
+            &-form {
+                width: 100%;
+                padding: 36px 17px;
+                &-input {
+                    flex-direction: column;
+
+                    div {
+                        input {
+                            width: 358px;
+                        }
+                    }
+                }
+
+                button {
+                    float: inline-start;
+                }
+            }
+        }
+    }
+
+    .stages {
+        &-text {
+            width: 309px;
+        }
+
+        &-table {
+            &-column {
+                &-item {
+                    margin-bottom: 20px;
+                    p {
+                        width: 266px;
+                    }
+                }
+            }
+        }
+    }
+
+    .team {
+        padding: 28px 0 45px 0;
+
+        &-info {
+            &-video {
+                height: 237px;
+                margin-bottom: 56px;
+            }
+
+            p {
+                width: 376px;
+                &:first-of-type {
+                    width: 376px;
+                }
+            }
+            &-list {
+                gap: 38px;
+                div {
+                    width: 102px;
+                    div{
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .book {
+        &-content {
+            &-item {
+                padding: 50px 0;
+
+                h4 {
+                    width: 333px;
+                    margin-bottom: 33px;
+                }
+
+                &-group {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 33px;
+
+                    &-3 {
+                        display: block;
+                    }
+
+                    &-2 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        &-title {
+            padding: 32px 0 32px 0;
+        }
+
+        &-content {
+            &-column {
+                &-item{
+
+                    .hr-blef-1 {
+                        display: none;
+                    }
+
+                    &-str {
+                        p {
+                            width: 273px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

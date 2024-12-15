@@ -1,0 +1,106 @@
+.book {
+    position: relative;
+    background-color: rgba(45, 102, 238, 1);
+
+    &-image {
+        position: relative;
+        z-index: 1; 
+
+        &::before {
+            content: ""; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../../img/ForFon.png') no-repeat center/cover; 
+            opacity: 0.25;
+            z-index: -1; 
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &-item {
+            padding: 80px 0;
+            width: 600px;
+
+            &-group {
+                &-2 {
+                    display: none;
+                }
+                
+                &-3 {
+                    display: none;
+                }
+            }
+
+            h4 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 51.84px;
+                color: #fff;
+            }
+
+            &-form {
+                background-color: #fff;
+                padding: 24px;
+                border-radius: 12px;
+
+                &-button {
+                    text-align: end;
+                }
+
+                button {
+                    background-color: #2D66EE;
+                    text-align: end;
+                    margin-top: 24px;
+                    padding: 11px 24px;
+                    border: none;
+                    border-radius: 8px;
+                    color:#fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+
+                &-input {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            color: rgba(102, 112, 133, 1);
+                        }
+
+                        input {
+                            border: none;
+                            border-bottom: 0.7px solid #D0D5DD;
+                            width: 264px;
+                            padding: 8px 0;
+                            font-weight: 400;
+                            font-size: 17px;
+                        }
+
+                        .email {
+                            width: 552px
+                        }
+                    }
+                }
+            }
+        }
+
+        &-image {
+            padding: 34px 0;
+        }
+    }
+}

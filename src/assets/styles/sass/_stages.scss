@@ -1,0 +1,79 @@
+.stages {
+    &-text {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 51.84px;
+        margin-top: 80px;
+    }
+
+    &-table {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 34px 0 80px 0;
+
+        &-column {
+            height: 564px;
+            width: 392px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-item {
+                min-height: 172px;
+                border-radius: 12px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 24px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 16px;
+
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        padding-left: 24px;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+
+            .analysis {
+                background: url('../../img/stages/1.png') no-repeat;
+                background-position: right top;
+            }
+
+            .design {
+                background: url('../../img/stages/2.png') no-repeat;
+                background-position: right top;
+            }
+
+            .devel {
+                background: url('../../img/stages/3.png') no-repeat;
+                background-position: right top;
+            }
+
+            .testing {
+                background: url('../../img/stages/4.png') no-repeat;
+                background-position: right top;
+            }
+
+            .launching {
+                background: url('../../img/stages/5.png') no-repeat;
+                background-position: right top;
+            }
+
+            .support {
+                background: url('../../img/stages/6.png') no-repeat;
+                background-position: right top;
+            }
+        }
+    }
+}
