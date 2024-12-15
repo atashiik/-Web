@@ -1,0 +1,67 @@
+.technologies-content {
+    padding: 80px 0 82px 0;
+    display: flex;
+    gap: 232px;
+    color: #101828;
+
+    .technologies-column {
+        .technologies-column-content {
+            margin-bottom: 34px;
+
+            div {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 51.84px;
+                text-align: left;
+                padding-bottom: 32px;
+            }
+
+            p{
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+
+        li {
+            padding: 12px 0;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+
+            &:hover {
+                font-weight: 600;
+                text-decoration-line: underline;
+                text-decoration-color: #2D66EE;
+            }
+        }
+
+        .technologies-column-text {
+            div {
+                div{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+
+                &:first-child{
+                    padding-bottom: 32px;
+                }
+            }
+
+            p{
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+
+        .technologies-column-element {
+            padding-left: 12px;
+            color: #2D66EE;
+        }
+    }
+}

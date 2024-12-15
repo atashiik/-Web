@@ -1,0 +1,53 @@
+.faq {
+    &-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 51.84px;
+        padding: 80px 0 40px 0;
+    }
+
+    &-content {
+        margin-bottom: 80px;
+        &-column {
+            display: flex;
+            gap: 24px;
+
+            &-item {
+                width: 600px;
+
+                hr {
+                    color: rgba(208, 213, 221);
+                    opacity: 0.4;
+                }
+
+                &-str {
+                    margin: 16px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    div {
+                        background-color: #fff;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 100%;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                        
+                        img {
+                            position: absolute;
+                            left: 20%;
+                            top: 20%;
+                        }
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
