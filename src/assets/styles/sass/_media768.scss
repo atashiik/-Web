@@ -1,0 +1,137 @@
+@media screen and (max-width: 1039px) {
+    .container {
+        max-width: 702px;
+        margin: 0 auto;
+    }
+
+    .container-dop {
+        margin: 0;
+    }
+
+    br {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+
+        .dropdown-container {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            background-color: #F2F4F7; 
+            display: flex; 
+            padding: 41px 55px 0 55px;
+            flex-direction: column;
+            align-items: center;
+
+            .header-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 51.84px;
+            }
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: #2D66EE;
+            margin: 42px 0 52px 0;
+        }
+
+        .contact-info-items{
+            gap: 32px;
+            margin: 52px 0 137px 0;
+
+            div{
+                color: #2D66EE;
+                display: flex;
+                align-content: center;
+                gap: 3px;
+            }
+        }
+    }
+
+    .header {
+        left: 0;
+        right: 0;
+        padding: 25px 32px;
+        margin-top: 16px;
+        gap: 158px;
+
+        .header-menu-768 {
+            display: block;
+        }
+
+        .header-nav, .contact-info-items:first-child{
+            display: none;
+        }
+    }
+
+    .intro {
+        padding: 140px 0 32px 0;
+
+        .intro-text {
+            width: 383px;
+
+            div {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+
+        .intro-form {
+            width: 383px;
+            
+            .form-elements {
+                display: block;
+
+                div{
+                    margin-bottom: 32px;
+                }
+            
+            }
+        }
+    }
+
+    .technologies_column {
+        max-width: 320px;
+
+        .technologies_content {
+            padding-top: 32px;
+            gap: 83px;
+
+            div {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+
+        .technologies_column_text {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .technologies_column_item {
+        padding-top: 124px;
+    }
+
+    .background-images {
+        display: none;
+    }
+}

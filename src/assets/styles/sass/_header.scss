@@ -1,0 +1,40 @@
+.header {
+    background-color: #fff;
+    display: inline-flex;
+    position: fixed;
+    margin: 0 auto;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #2D66EE;
+    padding: 24px 16px;
+    z-index: 100000;
+
+    .header-menu-768, .header-menu-425 {
+        display: none;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    nav {
+        color: #101828;
+        display: flex;
+        gap: 24px;
+    }
+
+    .contact-info {
+        display: flex;
+        gap: 16px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
