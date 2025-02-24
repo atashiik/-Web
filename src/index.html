@@ -6,13 +6,51 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-<div class="test" style="color: blue">
-    test
-</div>
 
+    <div class="container">
+        <h2>Выберите свою пиццу</h2>
+
+        <div class="">
+            <div class="pizza-options">
+                <input type="radio" id="margherita" name="pizza-type" value="Маргарита">
+                <label for="margherita">Маргарита</label>
+            
+                <input type="radio" id="pepperoni" name="pizza-type" value="Пепперони">
+                <label for="pepperoni">Пепперони</label>
+            
+                <input type="radio" id="bavarian" name="pizza-type" value="Баварская">
+                <label for="bavarian">Баварская</label>
+            </div>
+        </div>
+            
+        <div class="">
+            <h3>Выберите размер</h3>
+            <div class="size-options">
+                <input type="radio" id="big" name="pizza-size" value="Большая">
+                <label for="big">Большая</label>
+            
+                <input type="radio" id="small" name="pizza-size" value="Маленькая">
+                <label for="small">Маленькая</label>
+            </div>        
+        
+            <h3>Добавить по вкусу</h3>
+            <input type="checkbox" id="mozzarella" class="topping" value="сливочная моцарелла">
+            <label for="mozzarella">Сливочная моцарелла</label>
+
+            <input type="checkbox" id="cheese-crust" class="topping" value="сырный борт">
+            <label for="cheese-crust">Сырный борт</label>
+
+            <input type="checkbox" id="cheddar-parmesan" class="topping" value="чедер и пармезан">
+            <label for="cheddar-parmesan">Чедер и пармезан</label>
+
+        </div>
+
+        <button id="calculate">Рассчитать</button>
+    </div>    
+    
 <script src="index.js"></script>
 </body>
 </html>
