@@ -13,8 +13,8 @@ class Pizza {
 
         this.toppings = {
             "сливочная моцарелла": { price: 50, calories: 20 },
-            "сырный борт": { price: size === "Большая" ? 300 : 150, calories: 50 },
-            "чедер и пармезан": { price: size === "Большая" ? 300 : 150, calories: 50 }
+            "сырный борт": { price: 300, calories: 50 },
+            "чедер и пармезан": { price: 300, calories: 50 }
         };
 
         this.type = type;
@@ -30,18 +30,6 @@ class Pizza {
 
     removeTopping(topping) {
         this.selectedToppings = this.selectedToppings.filter(t => t !== topping);
-    }
-
-    getToppings() {
-        return this.selectedToppings;
-    }
-
-    getSize() {
-        return this.size;
-    }
-
-    getType() {
-        return this.type;
     }
 
     calculatePrice() {
@@ -63,16 +51,24 @@ class Pizza {
 
 document.addEventListener("DOMContentLoaded", function () {
     const calculateButton = document.getElementById("calculate");
-    const resultDiv = document.createElement("div");
-    resultDiv.id = "result";
-    document.body.appendChild(resultDiv);
+    const notification = document.createElement("div");
+    notification.id = "notification";
+    document.body.appendChild(notification);
 
-    calculateButton.addEventListener("click", function () {
+    function showNotification(message) {
+        notification.innerText = message;
+        notification.style.display = "block";
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 2000);
+    }
+
+    function updateButtonText() {
         const selectedType = document.querySelector("input[name='pizza-type']:checked")?.value;
         const selectedSize = document.querySelector("input[name='pizza-size']:checked")?.value;
 
         if (!selectedType || !selectedSize) {
-            alert("Выберите тип пиццы и размер!");
+            calculateButton.innerText = "Выберите пиццу";
             return;
         }
 
@@ -82,16 +78,40 @@ document.addEventListener("DOMContentLoaded", function () {
             pizza.addTopping(checkbox.value);
         });
 
-        const price = pizza.calculatePrice();
-        const calories = pizza.calculateCalories();
+        calculateButton.innerText = `Добавить в корзину (${pizza.calculatePrice()} руб, ${pizza.calculateCalories()} ккал)`;
+    }
 
-        resultDiv.innerHTML = `
-            <h3>Ваша пицца:</h3>
-            <p><strong>Тип пиццы:</strong> ${pizza.getType()}</p>
-            <p><strong>Размер:</strong> ${pizza.getSize()}</p>
-            <p><strong>Добавки:</strong> ${pizza.getToppings().join(", ") || "Нет"}</p>
-            <p><strong>Цена:</strong> ${price} рублей</p>
-            <p><strong>Калорийность:</strong> ${calories} Ккал</p>
-        `;
+    document.querySelectorAll("input").forEach(input => {
+        input.addEventListener("change", updateButtonText);
+    });
+
+    calculateButton.addEventListener("click", function () {
+        const selectedType = document.querySelector("input[name='pizza-type']:checked")?.value;
+        const selectedSize = document.querySelector("input[name='pizza-size']:checked")?.value;
+
+        if (!selectedType || !selectedSize) {
+            showNotification("Выберите тип пиццы и размер!");
+            return;
+        }
+
+        alert("Пицца добавлена в корзину!");
+    });
+
+    updateButtonText();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const radioButtons = document.querySelectorAll("input[type='radio']");
+    
+    radioButtons.forEach(radio => {
+        radio.addEventListener("click", function (event) {
+            if (this.checked) {
+                this.dataset.wasChecked = this.dataset.wasChecked === "true" ? "false" : "true";
+            }
+
+            if (this.dataset.wasChecked === "false") {
+                this.checked = false;
+            }
+        });
     });
 });

@@ -8,6 +8,33 @@ body {
     padding: 20px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizza-options {
+    display: flex;
+}
+
+.pizza-options label {
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.pizza-options label img {
+    width: 220px;
+}
+
+.toppings-options {
+    display: flex;
+}
+
+.toppings-options label img {
+    width: 120px;
+}
+
 input[type="radio"], 
 input[type="checkbox"] {
     display: none;
@@ -47,49 +74,3 @@ input[type="checkbox"]:checked + label {
     cursor: pointer;
     transition: 0.3s;
 }
-
-
-/* .container {
-    background: white;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-}
-
-select, button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #ff5722;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-button:hover {
-    background-color: #e64a19;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-}
- */

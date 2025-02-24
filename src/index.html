@@ -2,55 +2,69 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Выбор пиццы</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 
     <div class="container">
-        <h2>Выберите свою пиццу</h2>
+        <div class="pizza-options">
+            <input type="radio" id="margherita" name="pizza-type" value="Маргарита">
+            <label for="margherita">
+                <img src="assets/img/margar.avif" alt="Маргарита"><br>
+                Маргарита
+            </label>
 
-        <div class="">
-            <div class="pizza-options">
-                <input type="radio" id="margherita" name="pizza-type" value="Маргарита">
-                <label for="margherita">Маргарита</label>
-            
-                <input type="radio" id="pepperoni" name="pizza-type" value="Пепперони">
-                <label for="pepperoni">Пепперони</label>
-            
-                <input type="radio" id="bavarian" name="pizza-type" value="Баварская">
-                <label for="bavarian">Баварская</label>
-            </div>
+            <input type="radio" id="pepperoni" name="pizza-type" value="Пепперони">
+            <label for="pepperoni">
+                <img src="assets/img/peper.avif" alt="Пепперони"><br>
+                Пепперони
+            </label>
+
+            <input type="radio" id="bavarian" name="pizza-type" value="Баварская">
+            <label for="bavarian">
+                <img src="assets/img/bb.avif" alt="Баварская"><br>
+                Баварская
+            </label>
         </div>
-            
-        <div class="">
+
+        <div class="options-column">
             <h3>Выберите размер</h3>
             <div class="size-options">
                 <input type="radio" id="big" name="pizza-size" value="Большая">
                 <label for="big">Большая</label>
-            
+
                 <input type="radio" id="small" name="pizza-size" value="Маленькая">
                 <label for="small">Маленькая</label>
-            </div>        
-        
+            </div>
+
             <h3>Добавить по вкусу</h3>
-            <input type="checkbox" id="mozzarella" class="topping" value="сливочная моцарелла">
-            <label for="mozzarella">Сливочная моцарелла</label>
+            <div class="toppings-options">
+                <input type="checkbox" id="mozzarella" class="topping" value="сливочная моцарелла">
+                <label for="mozzarella">
+                    <img src="assets/img/mozart.png" alt="Сливочная моцарелла"><br>
+                    Сливочная моцарелла
+                </label>
 
-            <input type="checkbox" id="cheese-crust" class="topping" value="сырный борт">
-            <label for="cheese-crust">Сырный борт</label>
+                <input type="checkbox" id="cheese-crust" class="topping" value="сырный борт">
+                <label for="cheese-crust">
+                    <img src="assets/img/bort.png" alt="Сырный борт"><br>
+                    Сырный борт
+                </label>
 
-            <input type="checkbox" id="cheddar-parmesan" class="topping" value="чедер и пармезан">
-            <label for="cheddar-parmesan">Чедер и пармезан</label>
+                <input type="checkbox" id="cheddar-parmesan" class="topping" value="чедер и пармезан">
+                <label for="cheddar-parmesan">
+                    <img src="assets/img/parmezan.png" alt="Чедер и пармезан"><br>
+                    Чедер и пармезан
+                </label>
+            </div>
 
+            <button id="calculate">Рассчитать</button>
         </div>
-
-        <button id="calculate">Рассчитать</button>
     </div>    
-    
+
 <script src="index.js"></script>
 </body>
 </html>
